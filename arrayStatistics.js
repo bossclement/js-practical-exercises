@@ -4,6 +4,7 @@ const arrayStats = function(arr) {
         min: Math.min(...arr),
         max: Math.max(...arr)
     }
+    obj.average = obj.sum / arr.length;
     return obj;
 }
-console.log(arrayStats([1, 2, 3, 4, 5])); // output { sum: 15, min: 1, max: 5 }
+console.log(arrayStats([1, 2, 3, 4, 5])); // output { sum: 15, min: 1, max: 5, average: 3 }
